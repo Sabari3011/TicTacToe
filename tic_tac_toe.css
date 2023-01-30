@@ -1,0 +1,74 @@
+body{
+    background-image: linear-gradient(45deg,#bdc3c7,#2c3e50);
+    padding-right: 2cm;
+    
+}
+.cell{
+width: 2.5cm;
+height: 2.5cm;
+border: 2px solid;
+box-shadow: 0 0 0 2px;
+cursor: pointer;
+font-size: 2cm;
+line-height: 2cm;
+}
+#gameContainer{
+    font-family: "permanent Marker",cursive;
+    text-align: center;
+    position:absolute;
+}
+
+#cellContainer{
+display: grid;
+grid-template-columns: repeat(3,auto);
+
+}
+#heading{
+margin: 1cm 0cm;
+}
+#restart{
+    padding: 8px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+}
+.color{
+
+background-color: rgb(19, 18, 18);
+
+}
+
+.total{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.blur{
+    opacity: 0.1;  
+     transition: all 2s;
+}
+.move{
+    transition: all 2s;
+
+    transform: translate(3cm,-5.2cm);
+    font-size: 1cm;
+}
+.borderbtn{
+    border: 2px solid white;
+    transform: translate(0,-5.2cm);
+}
+.transfer{
+    transform: translate(5.2cm);
+}
+#statusText{
+margin-left: -5cm;
+}
